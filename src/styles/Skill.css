@@ -1,0 +1,62 @@
+.skill {
+    height: fit-content;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bg-color-element);
+    padding: var(--pading-content-skill);
+
+    .skillHeader {
+        margin-bottom: 20px;
+
+        .skillHeader_content {
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .listTech {
+        height: fit-content;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        gap: 60px;
+        overflow-y: auto;
+        padding: 10px 20px;
+
+        .aTech {
+            height: fit-content;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                height: 80px;
+            }
+
+            h4 {
+                text-transform: uppercase;
+                font-weight: 400;
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .listTech::-webkit-scrollbar {
+        background-color: transparent !important;
+        height: 5px;
+    }
+
+    .listTech::-webkit-scrollbar-thumb {
+        background-color: var(--bg-color);
+    }
+}

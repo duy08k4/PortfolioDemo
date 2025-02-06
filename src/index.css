@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: fit-content;
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+}
+
+.noSelect {
+  user-select: none;
+}
+
+:root {
+  /* Color */
+  --bg-color: #363636;
+  --bg-color-element: #222222;
+  --primary-color: #ffffff;
+  --secondary-color: #ffa500;
+  --border-color: #3e3e3e;
+  --para-color: #aaaaaa;
+  --directBtn-color: #000000;
+
+  /* Padding */
+  --pading-content-about: 70px 40px;
+  --pading-content-skill: 40px;
+
+  /* Border Radius */
+  --borderR-element: 20px
+}
+
+a:hover {
+  filter: brightness(0.8);
+  box-shadow: 0 0 5px 2px var(--border-color);
+}

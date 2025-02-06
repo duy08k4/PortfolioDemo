@@ -1,0 +1,64 @@
+.profileCard {
+    height: fit-content;
+    width: 90%;
+    background-color: var(--bg-color-element);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    border-radius: var(--borderR-element) 0 var(--borderR-element) var(--borderR-element);
+}
+
+.avatar {
+    width: 90%;
+    height: fit-content;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--borderR-element) 0 var(--borderR-element) var(--borderR-element);
+    }
+}
+
+.info {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .myMajor {
+        text-transform: uppercase;
+        color: var(--secondary-color);
+        font-weight: 300;
+    }
+
+    .myName {
+        text-transform: uppercase;
+        color: var(--primary-color);
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+
+.contact {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    .contactMethod {
+        text-decoration: none;
+        height: 40px;
+        width: 40px;
+        color: var(--primary-color);
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.1px solid var(--border-color);
+        border-radius: 50%;
+    }
+}

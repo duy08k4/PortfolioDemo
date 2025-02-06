@@ -1,0 +1,120 @@
+.projectCard {
+    position: relative;
+    height: fit-content;
+    width: 45%;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .projectCard__imgBox {
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+        background-color: #3e3e3e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: inherit;
+
+        img {
+            max-height: 100%;
+            max-width: 95%;
+        }
+    }
+
+    .projectCard__infoBox {
+        width: 100%;
+        height: fit-content;
+        padding: 0 20px;
+    }
+
+    .projectCard__infoBox--info {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .projectCard__infoBox--name {
+        margin-bottom: 20px;
+        
+        .projectCard__infoBox--name--content {
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+
+    .projectCard__infoBox--tech {
+        max-width: 100%;
+        overflow-x: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+
+        p {
+            height: fit-content;
+            width: fit-content;
+            font-size: 12px;
+            color: var(--para-color);
+            background-color: var(--bg-color);
+            padding: 5px 15px;
+            border: 0.5px solid var(--para-color);
+            border-radius: 10px;
+        }
+    }
+
+    .projectCard__infoBox--tech::-webkit-scrollbar {
+        height: 2px;
+        background-color: transparent;
+    }
+
+    .projectCard__infoBox--tech::-webkit-scrollbar-thumb {
+        background-color: var(--bg-color);
+        border-radius: 5px;
+    }
+
+    .projectCard__funcBox {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        padding: 0 20px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .livedemo {
+            color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .livedemo:hover {
+            filter: unset !important;
+            box-shadow: unset !important;
+        }
+
+        .viewSource {
+            color: var(--primary-color);
+            background-color: var(--bg-color);
+            padding: 6px 40px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+}

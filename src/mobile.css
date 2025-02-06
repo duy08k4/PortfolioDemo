@@ -1,0 +1,264 @@
+@media (max-width: 800px) {
+    :root {
+        /* Color */
+        --bg-color: #363636;
+        --bg-color-element: #222222;
+        --primary-color: #ffffff;
+        --secondary-color: #ffa500;
+        --border-color: #3e3e3e;
+        --para-color: #aaaaaa;
+        --directBtn-color: #000000;
+      
+        /* Padding */
+        --pading-content-about: 40px 10px;
+        --pading-content-skill: 40px;
+      
+        /* Border Radius */
+        --borderR-element: 10px;
+
+        --header-fontsize: 16px;
+        --header-fontsize-icon: 20px;
+      }
+    
+    /* App */
+    .App {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 95%;
+        padding: 10px 0;
+    }
+    /* ContainerProfile */
+    .containerProfile {
+        position: unset !important;
+        height: fit-content !important;
+        width: 100% !important;
+    }
+
+    .contactMethod {
+        padding: 25px;
+
+        i {
+            font-size: 18px;
+        }
+    }
+    
+    /* Content */
+    .content {
+        height: 100%;
+        flex: 1;
+        max-width: 95% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        gap: 20px;
+    }
+
+    .content > :nth-child(n) {
+        border-radius: var(--borderR-element) !important;
+    }
+
+    /* About */
+    .about {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: var(--pading-content-skill) !important;
+    
+        .infomationBox {
+            height: fit-content;
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            .greeting {
+                color: var(--primary-color);
+                display: flex;
+                font-size: 12px;
+                gap: 5px;
+    
+                p {
+                    color: var(--secondary-color);
+                    text-transform: capitalize;
+                }
+            }
+    
+            .levelMajor {
+                text-transform: capitalize;
+                font-weight: 500;
+                font-size: 26px !important;
+                color: var(--primary-color);
+            }
+    
+            .introduce {
+                width: 100%;
+                font-size: 12px !important;
+                line-height: 1.5;
+                font-weight: 200;
+                color: var(--para-color);
+            }
+    
+            .direct {
+                height: fit-content;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 40px;
+    
+                a {
+                    text-decoration: none;
+                    font-size: 12px !important;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    background-color: var(--directBtn-color);
+                    padding: 15px 20px !important;
+                    border-radius: 10px;
+                }
+    
+                .directCV {
+                    color: var(--secondary-color);
+                    display: flex;
+                    gap: 20px;
+                }
+    
+                .directProject {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    
+        .imgBox {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+    
+            img {
+                height: 200px;
+                width: auto;
+            }
+        }
+    }
+
+    /* Skills */
+    .skill {
+        .skillHeader {
+            font-size: var(--header-fontsize);
+            margin-bottom: 20px;
+    
+            .skillHeader_content {
+                i {
+                    font-size: var(--header-fontsize-icon) !important;
+                }
+            }
+        }
+    
+        .listTech {
+    
+            .aTech {
+                height: fit-content;
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+    
+                img {
+                    height: 50px !important;
+                }
+    
+                h4 {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    
+        .listTech::-webkit-scrollbar {
+            background-color: transparent !important;
+            height: 5px;
+        }
+    
+        .listTech::-webkit-scrollbar-thumb {
+            background-color: var(--bg-color);
+        }
+    }
+
+    /* Project Card */
+    .projectList {
+        padding: 0 !important;
+    }
+
+    .projectCard {
+        width: 100% !important;
+    
+        .projectCard__imgBox {
+            width: 100%;
+            height: 200px;
+            min-height: 200px;
+            background-color: #3e3e3e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: inherit;
+    
+            img {
+                max-height: 100%;
+                max-width: 95%;
+            }
+        }
+
+        .projectCard__infoBox {
+            padding: 0 10px !important;
+        }
+    
+        .projectCard__infoBox--name {
+            margin-bottom: 18px !important;
+            
+            .projectCard__infoBox--name--content {
+                color: var(--primary-color);
+                font-weight: 500;
+                font-size: 24px;
+            }
+        }
+    
+        .projectCard__infoBox--tech {
+            max-width: 100%;
+            overflow-x: auto;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+    
+            p {
+                font-size: 10px !important;
+            }
+        }
+    
+        .projectCard__funcBox {
+            padding: 0 10px !important;
+    
+            .livedemo {
+                font-size: 10px !important;
+            }
+    
+            .viewSource {
+                color: var(--primary-color);
+                font-size: 10px;
+                background-color: var(--bg-color);
+                padding: 6px 40px !important;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    .projectCard:hover {
+        transform: scale(1) !important;
+    }
+}

@@ -1,0 +1,35 @@
+.project {
+    height: fit-content;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bg-color-element);
+    padding: var(--pading-content-skill);
+
+    .projectHeader {
+        margin-bottom: 20px;
+
+        .projectHeader_content {
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 28px !important;
+            }
+        }
+    }
+
+    .projectList {
+        height: fit-content;
+        width: 100%;
+        background-color: transparent;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
